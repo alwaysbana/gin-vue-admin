@@ -1,0 +1,7 @@
+阶段	产出	核心概念
+1	项目骨架 + 配置加载	Go Module, Viper 配置, 项目分层
+2	数据库 + Logger 初始化	GORM, Zap 日志, 初始化流程
+3	用户模型 + JWT 登录	数据模型, 认证流程, API 设计
+4	Casbin 权限控制	RBAC, 中间件, 权限校验
+5	CRUD 增删改查	Service 层, 分页, 请求/响应规范
+6	代码生成器 + 更多功能	模板渲染, 文件上传, Swagger

@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  mode: debug
+
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  db: gin-vue-admin
+  user: root
+  password: 11111111
+
+jwt:
+  secret: "my-local-dev-secret-key-do-not-use-in-prod"
+  expiration: 7200
+  issuer: "gin-vue-admin"
