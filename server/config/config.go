@@ -1,29 +1,30 @@
 package config
 
 // server 结构体
-type server struct {
-	port int    `mapstructure:"port"`
-	mode string `mapstructure:"mode"`
+type Server struct {
+	Port int    `mapstructure:"port"`
+	Mode string `mapstructure:"mode"`
 }
 
 // MySQL 结构体
-type mysql struct {
-	host     string `mapstructure:"host"`
-	port     int    `mapstructure:"port"`
-	db       string `mapstructure:"db"`
-	user     string `mapstructure:"user"`
-	password string `mapstructure:"password"`
+type Mysql struct {
+	Host     string `mapstructure:"host"`
+	Port     int    `mapstructure:"port"`
+	Db       string `mapstructure:"db"`
+	User     string `mapstructure:"user"`
+	Password string `mapstructure:"password"`
 }
 
 // jwt 结构体
-type jwt struct {
-	secret     string `mapstructure:"secret"`
-	expiration int    `mapstructure:"expiration"`
-	issuer     string `mapstructure:"issuer"`
+type JWT struct {
+	Secret     string `mapstructure:"secret"`
+	Expiration int    `mapstructure:"expiration"`
+	Issuer     string `mapstructure:"issuer"`
 }
 
+// 配置结构体
 type Config struct {
-	Server server `mapstructure:"server"`
-	Mysql  mysql  `mapstructure:"mysql"`
-	Jwt    jwt    `mapstructure:"jwt"`
+	Server Server `mapstructure:"server"`
+	Mysql  Mysql  `mapstructure:"mysql"`
+	Jwt    JWT    `mapstructure:"jwt"`
 }
